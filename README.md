@@ -13,9 +13,13 @@ Hive can provide SQL like queries on data and finally from Hive data in exported
 All this is automated by Airflow.
 
 Files Discription:
-notebook.py : Transformation and loading 
+
+notebook.py : Transformation and loading                                                                                                                                                                 
+
 csv_export.hive : Hive script for exporting data into local
+
 hadoop_ingest.sh : shell script , it will upload data to hdfs
+
 hadoo_clear.sh : it will remove raw data from hadoop once it is loaded into spark
 
           +--------------------+
