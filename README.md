@@ -6,6 +6,7 @@ fault-tolerant data processing.
 
 
 Architecture :
+(This Pipeline is accordance with the Linux Virtual Machine )
 The data will come to local file system data_ingest folder.It will be loaded to HDFS in raw format.
 The raw data in data_ingest will be moved to old_data directory making data_ingest folder always ready for new fresh data.
 From HDFS spark will take over and transform the data and load the clean data in hive .
