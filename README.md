@@ -10,7 +10,7 @@ Architecture :
 The data will come to local file system data_ingest folder.It will be loaded to HDFS in raw format.
 The raw data in data_ingest will be moved to old_data directory making data_ingest folder always ready for new fresh data.
 From HDFS spark will take over and transform the data and load the clean data in hive .
-Hive can provide SQL like queries on data and finally from Hive data in exported to local file system (hive_export directory).
+Hive can provide SQL like queries on data and finally from Hive data is exported to local file system (hive_export directory).
 All this is automated by Airflow.
 
 Files Discription:
